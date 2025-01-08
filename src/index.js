@@ -17,10 +17,10 @@ await connectDB()
         
        })
     app.listen(process.env.PORT ||8000,()=>{
-        console.log(`Connecting to ${process.env.PORT}`);
+        console.log(` app listen port Connecting to ${process.env.PORT}`);
         
     })
-    console.log("MongoDB Connected...");
+    console.log(`MongoDB Connected...`);
  
 })
 .catch((err)=>{
