@@ -5,7 +5,7 @@ import cors from "cors";
 const app = express();
 
 app.use(cors({
-    origin: ProcessingInstruction.env.CORS_ORIGIN,
+    origin: process.env.CORS_ORIGIN,
     credentials: true, // Indicates whether the credentials (cookies) should be sent over HTTPS
 }))
 
