@@ -5,7 +5,7 @@ import dotenv from "dotenv"
 import connectDB from './db/databaseConnect.js';
 import app from "./app.js";
 dotenv.config({ 
-    path: './env'
+    path: './.env'
 }); // Load environment variables from.env file.
 
 

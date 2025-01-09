@@ -1,1 +1,3 @@
-export const DB_NAME = "bakery database"
+const DB_NAME="bakerydatabase";
+
+export { DB_NAME }
