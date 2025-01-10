@@ -57,7 +57,7 @@ const registerUser = asyncHandler(async (req, res) => {
          //     throw new ApiError(400,"all fields required")
          // }
 
-    // 3. check if ue is already exists
+    // 3. check if user is already exists
 
         const existedUser = await User.findOne({
           $or: [{ userName }, { email }],
@@ -129,7 +129,7 @@ const registerUser = asyncHandler(async (req, res) => {
             if (!createdUser) {
               throw new ApiError(500,'User not found');
             }
-            console.log(createdUser);
+            console.log("created user is ...",createdUser);
           } catch (error) {
             console.error('Error fetching user:', error.message);
           }
